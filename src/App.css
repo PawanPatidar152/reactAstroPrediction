@@ -1,0 +1,236 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+.container {
+  padding: 20px;
+  margin: 40px 100px;
+  margin-bottom: 80px;
+}
+
+input,
+button {
+  margin: 10px 0;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 3%;
+  margin: 2px;
+
+}
+#btn-reset{
+  background-color: red;
+}
+.input-box {
+  display: flex;
+  border-radius: 23px;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 100px;
+  border: 2px solid grey;
+  box-shadow: 10px 10px 5px #adb7bb;
+}
+.input-box-heading {
+  background-color: rgb(165, 155, 155);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+.input-box button {
+  width: 137px;
+  background-color: #a094cd;
+  padding: 7px;
+  border-radius: 32px;
+  border: none;
+  font-size: 21px;
+}
+.input-box-text{
+  display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+.input-box button:hover {
+  cursor: pointer;
+}
+.name {
+  margin: 40px 100px;
+}
+.text-interpretation {
+  margin: 40px 100px;
+}
+#span {
+  font-weight: bolder;
+}
+
+body {
+  --background-color: white; 
+  --text-color: black; 
+}
+
+.dark-mode {
+  --background-color: #333;
+  --text-color: white; 
+}
+
+
+.mode-switch {
+  position: static;
+  top: 64px;
+  right: 78px;
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  background-color: #9b7f97;
+  /* padding: 16px; */
+  border-radius: 20px;
+}
+.Switch{
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0px;
+  backdrop-filter: blur(30px);
+  padding-top: 20px;
+  padding-right: 26px;
+
+}
+.mode-switch:hover {
+  cursor: pointer;
+}
+
+#mode-toggle {
+  margin-left: 10px;
+  cursor: pointer;
+  display: none;
+}
+#mode-toogle-text{
+  padding: 16px;
+  cursor: pointer;
+}
+
+
+#mode-toggle + label:before {
+  content: "☀️";
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+
+#mode-toggle:checked + label {
+  color: var(--text-color);
+}
+
+.input-label {
+  margin: 7px 40px;
+  padding: 7px;
+}
+.text-interpretation {
+  animation: slideUp 4s ease-in-out;
+}
+#mode-text{
+  cursor: pointer;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#number-design{
+  font-size: 1.5em;
+    color: #ffffff;
+    /* text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #d9d9d9; */
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto;
+    border-radius: 50em;
+    background: #ac2024;
+    padding: 0.1em 0.4em;
+}
+
+
+
+
+/* Header Styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f0f0f0; /* Light gray background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Title Styles */
+header h1 {
+  margin: 0;
+  font-size: 1.5rem; /* Large, readable font size */
+  color: #333; /* Dark text for contrast */
+}
+
+/* Toggle Button Styles */
+header button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #333; /* Dark text */
+  background-color: #e4e4e4; /* Slightly darker gray than header */
+  border: none;
+  border-radius: 0.5rem; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+header button:hover {
+  background-color: #d4d4d4; /* Darker gray on hover for feedback */
+}
+
+/* Dark Mode Specific Styles */
+.dark-mode header {
+  background-color: #333; /* Dark background for dark mode */
+  color: #fff; /* Light text for contrast */
+}
+
+.dark-mode header button {
+  background-color: #444; /* Darker button in dark mode */
+  color: #fff; /* Light text for contrast */
+}
+
+.dark-mode header button:hover {
+  background-color: #555; /* Slightly lighter button on hover in dark mode */
+}
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #333;
+  color: white;
+}
+
+/* Light Mode Styles */
+body.light-mode {
+  background-color: white;
+  color: black;
+}
